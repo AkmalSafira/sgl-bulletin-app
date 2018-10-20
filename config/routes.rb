@@ -14,6 +14,7 @@ Rails.application.routes.draw do
   get 'about', to:'welcome#about'
   
   resources :articles 
+  resources :comments
 
   # Example resource route (maps HTTP verbs to controller actions automatically):
   #   resources :products
