@@ -34,8 +34,8 @@ class ArticlesController < ApplicationController
 
     
   def show
+    @comments =  @article.comments.recent
   end 
-  
     
   def destroy
     @article.destroy
