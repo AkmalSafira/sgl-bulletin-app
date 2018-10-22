@@ -1,1 +1,3 @@
-Repository for Bulletin board apps for SGL
+Repository for Bulletin Board apps for Sugiyama Global Laboratory and Pharumo
+
+written in Ruby v 2.4.4 on Rails 4.2.8
