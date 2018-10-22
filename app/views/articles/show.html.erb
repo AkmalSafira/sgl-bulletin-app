@@ -4,15 +4,16 @@
   <hr>
   <%= simple_format(@article.description) %>
   <div class="article-actions">
+    <h5 align='center'><strong>Comments</strong></h5>
+    <% @comments.each do |comment| %>
+    <p><%= comment.content %></p>
+    <% end %>
     <%= link_to "Edit this bulletin", edit_article_path(@article), class: "btn btn-xs btn-primary" %>
     <%= link_to "Delete this bulletin", article_path(@article), method: :delete, data: { confirm: "Are you sure you want to delete the bulletin?"}, class: "btn btn-xs btn-danger" %>
     <%= link_to "View all bulletin", articles_path, class: "btn btn-xs btn-success" %>
+    <%= link_to "Post a comment", new_comment_path(article_id: @article.id), class: "btn btn-xs btn-primary" %>
   </div>
+  </hr>
 </div>
 
- <h4>Comments</h4>
- <% @comments.each do |comment| %>
-    <p><%= comment.content %></p>
-  
-   <% end %>
- <%= link_to "Post comment", new_comment_path(article_id: @article.id) %> 
+
