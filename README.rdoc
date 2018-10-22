@@ -1,1 +1,5 @@
-Repository for Bulletin board apps for SGL
+This is the branch repository for comment functions
+
+Bulletin Board apps for Sugiyama Global Laboratory and Pharumo,Inc.
+
+written in Ruby v 2.4.4 on Rails 4.2.8
