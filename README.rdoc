@@ -1,6 +1,6 @@
 Repository for Bulletin Board apps for Sugiyama Global Laboratory and PHARUMO,Inc.
 
-written in Ruby v 2.4.4 on Rails 4.2.8
+Developed with Ruby v 2.4.4 on Rails 4.2.8
 
 Features:
 
