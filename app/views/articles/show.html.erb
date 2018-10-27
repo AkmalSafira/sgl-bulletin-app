@@ -26,5 +26,23 @@
       class: "btn btn-xs btn-danger" %>
       <%= link_to "View all bulletins", articles_path, class: "btn btn-xs btn-success" %>
     </div>
+    <br>
+    <br>
+  <h4 class="center description"><strong>Comments:</strong></h4>
+  <hr>
+  <% @article.comments.recent.map do |comment| %>
+    <%= comment.comment%>
+    <%= comment.created_at.strftime("%B %d, %Y - %H:%M") %>
+    <div class="comment-actions">
+      <%= link_to "Edit this comment", edit_comment_path(comment.id, article_id: @article.id), class: "btn btn-xs btn-primary" %>
+      <%= link_to "Delete this comment", comment_path(comment.id, article_id: @article.id), method: :delete, 
+      data: { confirm: "Are you sure you want to delete the comment?"}, class: "btn btn-xs btn-danger" %>
+      <br>
+      <br>
+    </div>
+  <% end %>
+  <br>
+  <%= link_to "Post a new comment for this article", new_comment_path(article_id: @article.id), class: "btn btn-xs btn-primary" %>
+  
   </div>
 
