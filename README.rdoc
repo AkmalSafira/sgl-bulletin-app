@@ -12,5 +12,5 @@ Implement the login function.
 User registration is possible.
 (+)Administrator account to control other user's thread.
 
-Able to create comments for thread. (see branch : master_comment_experiment)
-The comments in the thread are arranged in the newest order. (see branch : master_comment_experiment)
+Able to create comments for thread. (see branch : add-comment-master)
+The comments in the thread are arranged in the newest order. (see branch : add-comment-master)
